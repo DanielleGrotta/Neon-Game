@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogos Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>NEON GAME</h1>
+    <div id="box" class="box">
+        <form class="options">
+            <div id="container" class="section text-center">
+                <button type="button" id="startBtn" class="startBtn">Snake</button>
+                <button type="button" id="PongBtn">Pong</button>
+                <button type="button" href="#" id="SecretBtn">Secrets</button>
+                <button type="button" id="CreditsBtn">Credits</button>
+            </div>
+        </form>
+    </div>
+    <div class="section text-center" id="instructionsPong">
+        <p>Mova-se para os lados usando as setinhas ou o mouse destruindo todos os tijolos sem deixar a bolinha cair<p>
+            <button type="button" id="StartPong">Start</button>
+    </div>
+    <div class="section text-center" id="instructionsSnake">
+        <p>Mova-se para os lados usando as setinhas para comer a fruta sem bater nos cantos<p>
+            <button type="button" id="StartSnake">Start</button>
+    </div>
+    <img src="/images/dance.gif" class="credits">
+    <p id="credits" class="credits">Created by Danny Tetz </p>
+    <div id="jogo" class="jogo">
+        <div id="personagem">
+        </div>
+        <div id="obstaculo"></div>
+        <p>Score: <span id="scoreSpan"></span></p>
+    </div>
+    <canvas id="myCanvas" class="game" width="500" height="200"></canvas>
+    <canvas id="snakeCanvas" class="game" width="500" height="200"></canvas>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/script/script.js"></script>
+
+</html>

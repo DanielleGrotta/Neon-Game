@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 2em;
+    color: #09b2af;
+    text-shadow: 3px 3px 3px #da00ff;
+    font-family: Megrim;
+    padding-bottom: 1rem;
+}
+.options{
+    display:flex;
+    font-family: Megrim;
+
+}
+#container{
+    margin-bottom: 8rem;
+}
+.box{
+    background-color: #3200219c;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px 1px #ad0068;
+    height: 2.2rem;
+    overflow: hidden;
+}
+#instructionsPong{
+    display: none;
+    font-size: 2em;
+    color: #09b2af;
+    text-shadow: 3px 3px 3px #da00ff;
+    font-family: Megrim;
+    padding-bottom: 1rem;
+    width: 20rem;
+    background: #09b2af;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px #00eef7e8;
+}
+#StartPong{
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #186fcf;
+    font-family: Megrim;
+    width: 4rem;
+    height: 2rem;
+}
+#instructionsSnake{
+    display: none;
+    font-size: 2em;
+    color: #09b2af;
+    text-shadow: 3px 3px 3px #da00ff;
+    font-family: Megrim;
+    padding-bottom: 1rem;
+    width: 20rem;
+    background: #09b2af;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px #00eef7e8;
+}
+#StartSnake{
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #186fcf;
+    font-family: Megrim;
+    width: 4rem;
+    height: 2rem;
+}
+.credits{
+    display: none;
+    width: 13rem;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    margin-top: 1rem;
+    text-shadow: 0px 0px 3px white;
+}
+#credits{
+    margin-bottom: 4rem;
+}
+button,a{
+    background-color: #00cfc5d4;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 4rem;
+    height: 1rem;
+    box-shadow: 0px 0px 10px 3px #00eef7e8;
+    margin: 0.6rem;
+    outline: none;
+    font-family: Megrim;
+    font-weight:bolder;
+}
+button:hover,a:hover{
+    background-color: #ff00ead4;
+    box-shadow: 0px 0px 10px 3px #ff018ce8;
+    outline: none;
+}
+
+#jogo{
+    width: 500px;
+    height: 200px;
+    background-color: #25ddffde;
+    box-shadow: 0px 0px 9px 10px #24c8eb;
+    border-radius:13px;
+    display:none;
+
+}
+#myCanvas, #snakeCanvas{
+    background: #1dffffb0;
+    box-shadow: -4px 0px 8px 11px #09bdc97a;
+    border-radius: 13px;
+    display:none;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    font-family: Megrim;
+    text-shadow: 0px 0px 3px white;
+    padding: 3px;
+}

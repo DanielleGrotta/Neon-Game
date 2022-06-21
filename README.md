@@ -1,2 +1,2 @@
 # Neon-Game
-A game using Javascript and Canvas
+A Snake/Brick game using Javascript and Canvas

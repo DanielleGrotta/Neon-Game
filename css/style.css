@@ -11,7 +11,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/background.gif");
+    background-image: url("../images/background.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,9 +19,12 @@ body {
 h1{
     font-size: 2em;
     color: #09b2af;
-    text-shadow: 3px 3px 3px #da00ff;
+    text-shadow: 1px 2px 5px #ff4c8b;
     font-family: Megrim;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+    border-bottom: double;
+    box-shadow: 0px 17px 19px -17px #00bcd4;
+    margin-bottom: 1rem;
 }
 .options{
     display:flex;
@@ -37,18 +40,13 @@ h1{
     box-shadow: 0px 0px 13px 1px #ad0068;
     height: 2.2rem;
     overflow: hidden;
+    margin-bottom: 7rem;
 }
 #instructionsPong{
     display: none;
-    font-size: 2em;
     color: #09b2af;
-    text-shadow: 3px 3px 3px #da00ff;
-    font-family: Megrim;
-    padding-bottom: 1rem;
-    width: 20rem;
-    background: #09b2af;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 3px #00eef7e8;
+    width: 26rem;
+    box-shadow: 0px -22px 5px -21px #00eef7e8;
 }
 #StartPong{
     color: #ffffff;
@@ -59,15 +57,9 @@ h1{
 }
 #instructionsSnake{
     display: none;
-    font-size: 2em;
     color: #09b2af;
-    text-shadow: 3px 3px 3px #da00ff;
-    font-family: Megrim;
-    padding-bottom: 1rem;
-    width: 20rem;
-    background: #09b2af;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 3px #00eef7e8;
+    width: 26rem;
+    box-shadow: 0px -22px 5px -21px #00eef7e8;
 }
 #StartSnake{
     color: #ffffff;
@@ -131,9 +123,42 @@ button:hover,a:hover{
 p{
     text-align: center;
     color: white;
-    font-size: large;
-    font-weight: 900;
     font-family: Megrim;
-    text-shadow: 0px 0px 3px white;
-    padding: 3px;
+    text-shadow: 1px 0px 4px white;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+#saidaPong, #saidaSnake{
+    display: none;
+    margin-right: 20rem;
+}
+#StartPong, #StartSnake{
+    display: none;
+}
+.periquito{
+    width: 100%;
+}
+#periquitop{
+    background-color: transparent;
+    box-shadow: 0px 0px 0px;
+    width: 6rem;
+    height: 7rem;
+    position: absolute;
+    margin-left: 33rem;
+    margin-bottom: 12rem;
+}
+.comentario{
+    position: absolute;
+    margin-left: 47rem;
+    width: 13rem;
+    height: auto;
+    margin-bottom: 23rem;
+    background: #0ab4b0;
+    box-shadow: 0px 0px 8px 2px #0ab4b0;
+    color: #ffe7b0;
+    text-shadow: 0px 1px 5px #00ffffad;
+    font-family: monospace;
+    display: none;
+    border-radius: 7px;
+    padding: 7px;
 }

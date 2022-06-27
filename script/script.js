@@ -22,6 +22,20 @@ $(document).ready( function() {
     }
 
     });
+    $('#periquitop').on("click", function(e){
+        e.preventDefault();
+        var coment1 = document.getElementById("coment1");
+        var coment2 = document.getElementById("coment2");
+
+        if (coment1.style.display =="none"){
+            coment1.style.display = "block";
+            coment2.style.display = "none";
+        }else {
+            coment1.style.display = "none";
+            coment2.style.display = "block";
+        }
+        
+    });
 
 //---- EVENTO DE CLICK QUE MOSTRA OS CREDITOS ----//
     $('#CreditsBtn').on("click", function(){
@@ -29,6 +43,13 @@ $(document).ready( function() {
         $('.credits').show();
     });
 
+    $('#saidaPong').on("click", function(){
+        location.reload();
+    })
+
+    $('#saidaSnake').on("click", function(){
+        location.reload();
+    })
 
  //---- EVENTO DE CLICK FAZ MEU MENU SUMIR E APARECER SÓ O JOGO-----------//
     $('#startBtn').on("click", function(){
@@ -36,9 +57,13 @@ $(document).ready( function() {
 //---- USO UM HIDE/SHOW E UM DISPLAY_NONE/BLOCK PARA SUMIR E APARECER -----------//
         document.getElementById("box").style.display = "none";
         document.getElementById("instructionsSnake").style.display = "block";
+        document.getElementById("StartSnake").style.display = "block";
+        document.getElementById("saidaSnake").style.display = "block";
 
         $('#StartSnake').on("click", function(){
             document.getElementById("instructionsSnake").style.display = "none";
+            document.getElementById("StartSnake").style.display = "none";
+            document.getElementById("saidaSnake").style.display = "none";
             document.getElementById("snakeCanvas").style.display = "block";
 
     //---- CRIO MINHAS VARIAVEIS COM DIMENSOES QUE QUERO -----------//
@@ -222,8 +247,8 @@ $(document).ready( function() {
                 0 > ny || ny > grid.height-1 ||
                 grid.get(nx, ny) === SNAKE
                 ) {
-                alert("Game Over!");
-                    location.reload();
+                    alert("Game Over!");
+                        location.reload();
                 }
                 
                 if (grid.get(nx, ny) === FRUIT) {
@@ -276,9 +301,13 @@ $(document).ready( function() {
     $('#PongBtn').on("click", function(){
         document.getElementById("box").style.display = "none";
         document.getElementById("instructionsPong").style.display = "block";
+        document.getElementById("StartPong").style.display = "block";
+        document.getElementById("saidaPong").style.display = "block";
 
         $('#StartPong').on("click", function(){
             document.getElementById("instructionsPong").style.display = "none";
+            document.getElementById("StartPong").style.display = "none";
+            document.getElementById("saidaPong").style.display = "none";
             document.getElementById("myCanvas").style.display = "block";
 
             var canvas = document.getElementById("myCanvas");

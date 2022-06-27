@@ -40,6 +40,14 @@
     <p id="credits" class="credits">Created by Danny Tetz </p>
     <canvas id="myCanvas" class="game" width="500" height="200"></canvas>
     <canvas id="snakeCanvas" class="game" width="500" height="200"></canvas>
+    <audio  id="player"src="../sound/musica.mp3" autoplay="true"></audio>
+    <div id="audio"> 
+        <h1>Player</h1>
+        <button onclick="document.getElementById('player').play()">Play</button> 
+        <button onclick="document.getElementById('player').pause()">Pause</button> 
+        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="../script/script.js"></script>

@@ -44,11 +44,17 @@ $(document).ready( function() {
     });
 
     $('#saidaPong').on("click", function(){
-        location.reload();
+        document.getElementById("instructionsPong").style.display = "none";
+        document.getElementById("StartPong").style.display = "none";
+        document.getElementById("saidaPong").style.display = "none";
+        document.getElementById("box").style.display = "block";
     })
 
     $('#saidaSnake').on("click", function(){
-        location.reload();
+        document.getElementById("instructionsSnake").style.display = "none";
+        document.getElementById("StartSnake").style.display = "none";
+        document.getElementById("saidaSnake").style.display = "none";
+        document.getElementById("box").style.display = "block";
     })
 
  //---- EVENTO DE CLICK FAZ MEU MENU SUMIR E APARECER SÓ O JOGO-----------//
@@ -59,7 +65,7 @@ $(document).ready( function() {
         document.getElementById("instructionsSnake").style.display = "block";
         document.getElementById("StartSnake").style.display = "block";
         document.getElementById("saidaSnake").style.display = "block";
-
+    });
         $('#StartSnake').on("click", function(){
             document.getElementById("instructionsSnake").style.display = "none";
             document.getElementById("StartSnake").style.display = "none";
@@ -296,14 +302,14 @@ $(document).ready( function() {
 
             main();
         });
-    });
+ 
 //---- EVENTO DE CLICK NOVAMENTE QUE TIRA O MENU E MOSTRA O JOGO, CRIA VARIAVEIS,COMANDOS ----//
     $('#PongBtn').on("click", function(){
         document.getElementById("box").style.display = "none";
         document.getElementById("instructionsPong").style.display = "block";
         document.getElementById("StartPong").style.display = "block";
         document.getElementById("saidaPong").style.display = "block";
-
+    });
         $('#StartPong').on("click", function(){
             document.getElementById("instructionsPong").style.display = "none";
             document.getElementById("StartPong").style.display = "none";
@@ -490,5 +496,4 @@ $(document).ready( function() {
             }
             draw();
         });
-    });
 });

@@ -37,6 +37,11 @@ $(document).ready( function() {
         
     });
 
+    $('#endBtn').on("click", function(e){
+        e.preventDefault();
+        location.reload();
+    });
+
 //---- EVENTO DE CLICK QUE MOSTRA OS CREDITOS ----//
     $('#CreditsBtn').on("click", function(){
         $('#box').hide();
@@ -253,8 +258,10 @@ $(document).ready( function() {
                 0 > ny || ny > grid.height-1 ||
                 grid.get(nx, ny) === SNAKE
                 ) {
-                    alert("Game Over!");
-                        location.reload();
+                    document.getElementById("snakeCanvas").style.display = "none";
+                    document.getElementById("name").style.display = "none";
+                    document.getElementById("gameOver").style.display = "block";
+                    document.getElementById("endBtn").style.display = "block";
                 }
                 
                 if (grid.get(nx, ny) === FRUIT) {
@@ -387,8 +394,11 @@ $(document).ready( function() {
                                 b.status = 0;
                                 score++;
                                 if(score == brickRowCount*brickColumnCount) {
-                                    alert("GANHOU, XD!");
-                                    document.location.reload();
+                                    document.getElementById("myCanvas").style.display = "none";
+                                    document.getElementById("name").style.display = "none";
+                                    document.getElementById("gameOver").style.display = "none";
+                                    document.getElementById("win").style.display = "block";
+                                    document.getElementById("endBtn").style.display = "block";
                                 }
                             }
                         }
@@ -470,8 +480,10 @@ $(document).ready( function() {
                     else {
                         lives--;
                         if(!lives) {
-                            alert("GAME OVER");
-                            document.location.reload();
+                            document.getElementById("myCanvas").style.display = "none";
+                            document.getElementById("name").style.display = "none";
+                            document.getElementById("gameOver").style.display = "block";
+                            document.getElementById("endBtn").style.display = "block";
                         }
                         else {
                             x = canvas.width/2;
